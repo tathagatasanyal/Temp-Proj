@@ -1,0 +1,124 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.App{
+  background-image: url('./Images/City-Heatwave-777x518.jpg');
+  background-size: cover;
+  /* background-position:bottom; */
+  transition: 0.4 ease-out;
+}
+
+.App.cold{
+  background-image: url('./Images/cold-weather_tcm96-36410.jpg');
+}
+main{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75) );
+  padding: 25px;
+}
+.search-box{
+  width: 100%;
+  margin: 0 auto 75px;
+}
+
+.search-box .search-bar{
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.3);
+
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow:0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 31px;
+  transition: 0.4s;
+}
+.search-box .search-bar:focus{
+  background-color: rgba(255, 255,255, 0.75);
+}
+
+.location-box .location{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5) ;
+}
+
+.location-box .date{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-shadow:  3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box{
+  text-align: center;
+}
+ 
+.weather-box .temperature{
+  position: relative;
+  display:inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255,255, 0.5);
+  border-radius: 16px;
+  padding: 15px 25px;
+
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5) ;
+}
+
+.content{
+  display: block;
+  width: 50%;
+  padding: 25px 20px ;
+  margin: 30px auto;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background: rgba(255, 255,255, 0.2);
+
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow:0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 31px;
+  transition: 0.4s;
+  
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    font-family: 'montserrat', 'sans-serif';
+  }
+}
